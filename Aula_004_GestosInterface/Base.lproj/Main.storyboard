@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Aula_004_GestosInterface" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dbw-G7-hPT">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="89S-AF-t7q"/>
+                                    <constraint firstAttribute="height" constant="100" id="PgK-84-nnf"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZSJ-zo-1lI" appends="YES" id="fso-eE-8zL"/>
+                                    <outletCollection property="gestureRecognizers" destination="und-J2-fQq" appends="YES" id="EGh-rF-yuV"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="dbw-G7-hPT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7sA-cB-c1X"/>
+                            <constraint firstItem="dbw-G7-hPT" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vNU-3H-Rxi"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="ZSJ-zo-1lI" appends="YES" id="OoV-AR-ZKM"/>
+                            <outletCollection property="gestureRecognizers" destination="und-J2-fQq" appends="YES" id="6IH-CD-XAZ"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="minhaView" destination="dbw-G7-hPT" id="Bh3-iu-G8Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ZSJ-zo-1lI">
+                    <connections>
+                        <action selector="mover:" destination="BYZ-38-t0r" id="ZNo-Fg-FeV"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="und-J2-fQq">
+                    <connections>
+                        <action selector="bater:" destination="BYZ-38-t0r" id="Fod-c1-hKh"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+        </scene>
+    </scenes>
+</document>
